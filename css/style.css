@@ -212,19 +212,59 @@ a {
 
 /****** Search ******/
 
-.search-form {}
+.search-form {
+    display: flex;
+    gap: 0;
+    height: 49px;
+}
 
-.search-location {}
+.search-location-icon {
+    display: inline-flex;
+    background-color: var(--main-bg-color);
+    width: 50px;
+    height: 100%;
+    border-radius: 15px 0 0 15px;
+    justify-content: center;
+    align-items: center;
+}
 
-.search-location-icon {}
+.search-location-icon>i {
+    color: black;
+    font-size: 18px;
+}
 
-.search-input {}
+.search-input {
+    border-width: 1px 0 1px 0;
+    border-color: var(--main-bg-color);
+    border-style: solid;
+    height: 100%;
+    width: 194px;
+    margin: 0;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
 
-.search-button {}
+/*pour enlever le cadre quand dans le champ*/
+.search-input:focus {
+    outline: none;
+}
 
-.search-button-text {}
+/*pour enlever la croix sur Googel Chrome*/
+input[type="search"]::-webkit-search-cancel-button {
+    display: none;
+}
 
-.search-button-icon {}
+.search-button {
+    background-color: var(--main-color);
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 0 15px 15px 0;
+    height: 100%;
+    width: 132px;
+    border: none;
+}
 
 /****** Filtres ******/
 
