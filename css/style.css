@@ -282,8 +282,6 @@ input[type="search"]::-webkit-search-cancel-button {
     font-weight: bold;
 }
 
-.filters-list {}
-
 .filter-button {
     display: inline-flex;
     gap: 11px;
@@ -304,15 +302,27 @@ input[type="search"]::-webkit-search-cancel-button {
     }
 }
 
-.filter-icon {}
-
-.filter-label {}
-
 /****** Info ******/
 
-.info {}
+.info {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
 
-.info-icon {}
+.info-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--main-bg-color);
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+}
+
+.info-icon>i {
+    font-size: 10px;
+}
 
 .info-text {}
 
