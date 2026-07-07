@@ -177,12 +177,13 @@ a {
     margin: 0 0 0 68px;
     padding: 14px 0;
     list-style: none;
-    border-top: 2px solid transparent
-}
+    border-top: 2px solid transparent;
 
-.header-nav-list>li:hover {
-    border-top: 2px solid var(--main-color);
-    color: var(--main-color);
+    &:hover {
+        border-top: 2px solid var(--main-color);
+        color: var(--main-color);
+        transition: ease 800ms;
+    }
 }
 
 /******************************/
@@ -243,11 +244,11 @@ a {
     text-align: center;
     font-size: 18px;
     font-weight: bold;
-}
 
-/*pour enlever le cadre quand dans le champ*/
-.search-input:focus {
-    outline: none;
+    /*pour enlever le cadre quand dans le champ*/
+    &:focus {
+        outline: none;
+    }
 }
 
 /*pour enlever la croix sur Googel Chrome*/
@@ -264,17 +265,44 @@ input[type="search"]::-webkit-search-cancel-button {
     height: 100%;
     width: 132px;
     border: none;
+    cursor: pointer;
 }
 
 /****** Filtres ******/
 
-.filters {}
+.filters {
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    height: 50px;
+}
 
-.filters-title {}
+.filters-title {
+    font-size: 18px;
+    font-weight: bold;
+}
 
 .filters-list {}
 
-.filter-button {}
+.filter-button {
+    display: inline-flex;
+    gap: 11px;
+    align-items: center;
+    justify-content: center;
+    padding: 13px 18px;
+    background-color: white;
+    border: 2px solid var(--main-bg-color);
+    border-radius: 25px;
+    font-size: 17px;
+    font-weight: bold;
+    height: 100%;
+    cursor: pointer;
+
+    &:hover {
+        background-color: var(--filter-bg-color);
+        transition: ease 800ms;
+    }
+}
 
 .filter-icon {}
 
