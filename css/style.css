@@ -324,8 +324,6 @@ input[type="search"]::-webkit-search-cancel-button {
     font-size: 10px;
 }
 
-.info-text {}
-
 /******************************/
 /****** Sections ******/
 /******************************/
@@ -333,6 +331,7 @@ input[type="search"]::-webkit-search-cancel-button {
 .section-title {
     margin: 0;
     font-size: 22px;
+    font-weight: bold;
 }
 
 /****** Sections ***********/
@@ -358,17 +357,49 @@ input[type="search"]::-webkit-search-cancel-button {
 
 .hebergements {
     width: 65%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
-.hebergements-cards {}
+.hebergement-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-.hebergement-card {}
+.hebergements-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px;
+}
 
-.hebergement-card-img {}
+.hebergement-card {
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
 
-.hebergement-card-content {}
+.hebergement-card img {
+    object-fit: cover;
+    width: 100%;
+    height: 124px;
+    border-radius: 20px 20px 0 0;
+}
 
-.hebergements-more {}
+.hebergement-card-content {
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+    padding: 8px 15px;
+}
+
+.hebergements-more>span {
+    font-size: 18px;
+    font-weight: bold;
+}
 
 /****** Hébergements + populaires ******/
 
@@ -429,6 +460,7 @@ input[type="search"]::-webkit-search-cancel-button {
 
 .card-title {
     font-size: 16px;
+    font-weight: bold;
 }
 
 .populaires-cards .card {
@@ -457,8 +489,10 @@ input[type="search"]::-webkit-search-cancel-button {
     margin-bottom: 4px;
 }
 
-.populaires-cards .card-subtitle {
+.card-subtitle {
     margin: 0;
+    font-size: 14px;
+
 }
 
 .populaires-cards .card-rating {
