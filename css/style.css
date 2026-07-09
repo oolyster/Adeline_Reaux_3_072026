@@ -476,19 +476,48 @@ input[type="search"]::-webkit-search-cancel-button {
 
 /****** Activités ******/
 
-.activities {}
+.section-activities {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+}
 
-.activities-title {}
+.activities-title {
+    font-size: 22px;
+    font-weight: bold;
+}
 
-.activities-cards {}
+.section-activities .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 30px;
+}
 
-.activity-card {}
+.section-activities .card {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    height: 439px;
+    border-radius: 20px;
+    background-color: white;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    padding: 0 0 8px 0;
+}
 
-.activity-card-img {}
+.section-activities .card-img {
+    object-fit: cover;
+    width: 100%;
+    height: 380px;
+    border-radius: 20px 20px 0 0;
+}
 
-.activity-card-content {}
-
-.activity-card-title {}
+.section-activities .card-title {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0 15px;
+}
 
 /******************************/
 /****** Footer ******/
