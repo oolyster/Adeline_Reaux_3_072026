@@ -480,6 +480,7 @@ input[type="search"]::-webkit-search-cancel-button {
     display: flex;
     gap: 30px;
     flex-direction: column;
+    margin: 30px 0;
 }
 
 .activities-title {
@@ -523,15 +524,31 @@ input[type="search"]::-webkit-search-cancel-button {
 /****** Footer ******/
 /******************************/
 
-.section-footer {}
+.section-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
 
-.footer-column {}
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: var(--main-bg-color);
+    margin: 35px 0 0 0;
+    padding: 20px;
+}
 
-.footer-title {}
+.footer-title {
+    font-size: 18px;
+    font-weight: bold;
+}
 
 .footer-list {}
 
-.footer-link {}
+.footer-link {
+    margin: 0 0 15px 0;
+}
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
