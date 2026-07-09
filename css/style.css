@@ -336,22 +336,18 @@ input[type="search"]::-webkit-search-cancel-button {
 
 /****** Sections ***********/
 
-.section {}
 
-.section-header {}
+.hebergements-and-populaires {
+    display: flex;
+    justify-content: space-between;
+}
 
-.section-cards {}
-
-.section-link {}
-
-.section--grey {}
-
-.section--white {}
-
-.section--wide {}
-
-.section--compact {}
-
+.hebergements-and-populaires section {
+    background-color: var(--main-bg-color);
+    border-radius: 20px;
+    padding: 30px;
+    box-sizing: border-box;
+}
 
 /****** Hébergements ******/
 
@@ -375,44 +371,10 @@ input[type="search"]::-webkit-search-cancel-button {
     gap: 30px;
 }
 
-.hebergement-card {
-    background-color: white;
-    border-radius: 20px;
-    padding: 5px;
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-}
-
-.hebergement-card img {
-    object-fit: cover;
-    width: 100%;
-    height: 124px;
-    border-radius: 20px 20px 0 0;
-}
-
-.hebergement-card-content {
-    display: flex;
-    gap: 8px;
-    flex-direction: column;
-    padding: 8px 15px;
-}
-
 .hebergements-more>span {
     font-size: 18px;
     font-weight: bold;
-}
-
-/****** Hébergements + populaires ******/
-
-.hebergements-and-populaires {
-    display: flex;
-    justify-content: space-between;
-}
-
-.hebergements-and-populaires section {
-    background-color: var(--main-bg-color);
-    border-radius: 20px;
-    padding: 30px;
-    box-sizing: border-box;
+    cursor: pointer;
 }
 
 /****** Populaires ******/
@@ -426,22 +388,6 @@ input[type="search"]::-webkit-search-cancel-button {
     justify-content: space-between;
     align-items: center;
 }
-
-/****** Activités ******/
-
-.activities {}
-
-.activities-title {}
-
-.activities-cards {}
-
-.activity-card {}
-
-.activity-card-img {}
-
-.activity-card-content {}
-
-.activity-card-title {}
 
 /******************************/
 /****** Cards ******/
@@ -506,6 +452,43 @@ input[type="search"]::-webkit-search-cancel-button {
 .neutral-star {
     color: var(--main-bg-color);
 }
+
+.hebergement-card {
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+
+.hebergement-card img {
+    object-fit: cover;
+    width: 100%;
+    height: 124px;
+    border-radius: 20px 20px 0 0;
+}
+
+.hebergement-card-content {
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+    padding: 8px 15px;
+}
+
+/****** Activités ******/
+
+.activities {}
+
+.activities-title {}
+
+.activities-cards {}
+
+.activity-card {}
+
+.activity-card-img {}
+
+.activity-card-content {}
+
+.activity-card-title {}
 
 /******************************/
 /****** Footer ******/
