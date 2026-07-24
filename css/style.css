@@ -687,4 +687,23 @@ input[type="search"]::-webkit-search-cancel-button {
     .filter-button {
         width: calc(50% - 10px);
     }
+
+    .subsection-hebergements {
+        order: 2;
+        background-color: white;
+        border-radius: 0;
+        width: 100vw;
+        margin-left: -20px;
+    }
+
+    .subsection-populaires {
+        border-radius: 0;
+        width: 100vw;
+        margin-left: -20px;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+    }
 }
