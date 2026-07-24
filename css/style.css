@@ -112,7 +112,7 @@
     }
 
     body {
-        line-height: 1;
+        line-height: 1.2;
     }
 
     ol,
@@ -437,7 +437,6 @@ input[type="search"]::-webkit-search-cancel-button {
 .card-title {
     font-size: 16px;
     font-weight: bold;
-    line-height: 1.2em;
 }
 
 .card-subtitle {
@@ -676,9 +675,16 @@ input[type="search"]::-webkit-search-cancel-button {
     .filters {
         flex-direction: column;
         justify-content: flex-start;
+        height: auto;
+        align-items: flex-start;
     }
 
     .filter-buttons {
         flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .filter-button {
+        width: calc(50% - 10px);
     }
 }
