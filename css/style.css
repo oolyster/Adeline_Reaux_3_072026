@@ -394,6 +394,13 @@ input[type="search"]::-webkit-search-cancel-button {
     grid-template-rows: 1fr 1fr 1fr;
 }
 
+
+.populaires-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 /****** Activités ******/
 
 .section-activities {
@@ -705,5 +712,18 @@ input[type="search"]::-webkit-search-cancel-button {
     .cards {
         display: flex;
         flex-direction: column;
+    }
+
+    .section-footer {
+        grid-template-columns: 1fr;
+        grid-template-rows: 4fr 3fr 3fr;
+        width: 100vw;
+        margin-left: -20px;
+        padding-bottom: 30px;
+        background-color: var(--main-bg-color);
+    }
+
+    .footer-column {
+        padding: 0 30px;
     }
 }
