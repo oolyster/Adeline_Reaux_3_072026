@@ -693,6 +693,7 @@ input[type="search"]::-webkit-search-cancel-button {
 
     .filter-button {
         width: calc(50% - 10px);
+        font-size: 14px;
     }
 
     .subsection-hebergements {
@@ -712,6 +713,19 @@ input[type="search"]::-webkit-search-cancel-button {
     .cards {
         display: flex;
         flex-direction: column;
+    }
+
+    .section-activities .card {
+        height: 200px;
+        gap: 18px;
+    }
+
+    .section-activities .card-img {
+        height: 141px;
+    }
+
+    .section-activities .card-title {
+        padding: 4px 15px;
     }
 
     .section-footer {
