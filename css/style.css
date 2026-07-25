@@ -6,120 +6,23 @@
     font-family: "Raleway", sans-serif;
 }
 
-* {
+body,
+ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
 
-    html,
-    body,
-    div,
-    span,
-    applet,
-    object,
-    iframe,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    p,
-    blockquote,
-    pre,
-    a,
-    abbr,
-    acronym,
-    address,
-    big,
-    cite,
-    code,
-    del,
-    dfn,
-    em,
-    img,
-    ins,
-    kbd,
-    q,
-    s,
-    samp,
-    small,
-    strike,
-    strong,
-    sub,
-    sup,
-    tt,
-    var,
-    b,
-    u,
-    i,
-    center,
-    dl,
-    dt,
-    dd,
-    ol,
-    ul,
-    li,
-    fieldset,
-    form,
-    label,
-    legend,
-    table,
-    caption,
-    tbody,
-    tfoot,
-    thead,
-    tr,
-    th,
-    td,
-    article,
-    aside,
-    canvas,
-    details,
-    embed,
-    figure,
-    figcaption,
-    footer,
-    header,
-    hgroup,
-    menu,
-    nav,
-    output,
-    ruby,
-    section,
-    summary,
-    time,
-    mark,
-    audio,
-    video {
-        margin: 0;
-        padding: 0;
-        border: 0;
-        font-size: 100%;
-        font: inherit;
-        vertical-align: baseline;
-    }
+body {
+    line-height: 1.2;
+}
 
-    article,
-    aside,
-    details,
-    figcaption,
-    figure,
-    footer,
-    header,
-    hgroup,
-    menu,
-    nav,
-    section {
-        display: block;
-    }
-
-    body {
-        line-height: 1.2;
-    }
-
-    ol,
-    ul {
-        list-style: none;
-    }
-
+ol,
+ul {
+    list-style: none;
 }
 
 :root {
@@ -180,12 +83,14 @@ a {
     list-style: none;
     border-top: 2px solid transparent;
 
-    &:hover {
-        border-top: 2px solid var(--main-color);
-        color: var(--main-color);
-        transition: ease 800ms;
-    }
 }
+
+.header-nav-list>li:hover {
+    border-top: 2px solid var(--main-color);
+    color: var(--main-color);
+    transition: ease 800ms;
+}
+
 
 /******************************/
 /****** Results ******/
@@ -243,12 +148,13 @@ a {
     text-align: center;
     font-size: 18px;
     font-weight: bold;
-
-    /*pour enlever le cadre quand dans le champ*/
-    &:focus {
-        outline: none;
-    }
 }
+
+/*pour enlever le cadre quand dans le champ*/
+.search-input:focus {
+    outline: none;
+}
+
 
 /*pour enlever la croix sur Googel Chrome*/
 input[type="search"]::-webkit-search-cancel-button {
@@ -309,11 +215,13 @@ input[type="search"]::-webkit-search-cancel-button {
     height: 100%;
     cursor: pointer;
 
-    &:hover {
-        background-color: var(--filter-bg-color);
-        transition: ease 800ms;
-    }
 }
+
+.filter-button:hover {
+    background-color: var(--filter-bg-color);
+    transition: ease 800ms;
+}
+
 
 /****** Info ******/
 
@@ -505,7 +413,7 @@ input[type="search"]::-webkit-search-cancel-button {
 .section-activities .card {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 24px;
     width: 100%;
     height: 439px;
     border-radius: 20px;
@@ -649,11 +557,13 @@ input[type="search"]::-webkit-search-cancel-button {
         justify-content: center;
         padding: 0 0 14px 0;
 
-        &:hover {
-            border-bottom: 2px solid var(--main-color);
-            border-top: 0;
-        }
     }
+
+    .header-nav-list>li:hover {
+        border-bottom: 2px solid var(--main-color);
+        border-top: 0;
+    }
+
 
     .search-form {
         width: 100%;
